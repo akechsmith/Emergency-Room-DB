@@ -23,4 +23,4 @@ Our scripts includes foreign key constraints to maintain data integrity and ensu
 Overall, this schema provides a foundation for managing hospital operations, including patient care, staff scheduling, and medication management.
 
 ### CONTRIBUTORS
-[Akech Atem](https://duckduckgo.com)
+[Akech Atem](https://github.com/akechsmith)
