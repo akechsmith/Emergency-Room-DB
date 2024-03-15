@@ -2,21 +2,35 @@
 
 Our database schema for a hospital management system includes tables for shifts, doctors, receptionists, nurses, patients, beds, medications, and persons associated with various roles in the hospital.
 
-*  SHIFT: Stores information about different shifts in the hospital, such as start time and end time.
+*  PERSON: Stores information about individuals, including their last name, first name, and middle name.
 
-*  DOCTOR: Contains details about doctors working in the hospital, including their assigned shift.
+*  ADDRESS: Contains addresses associated with individuals, including details such as country, province, city, street, and street number.
 
-*  RECEPTIONIST: Stores data about receptionists, including their assigned shift.
+*  CONTACT: Stores contact information like email addresses and telephone numbers linked to individuals.
 
-*  NURSE: Holds information about nurses, including their assigned shift.
+*  WORKER: Holds data about workers in the emergency room, including their worker ID, worker type, and associated person ID.
 
-*  PATIENT: Stores information about patients admitted to the hospital, including admission time, assigned doctor, receptionist, and bed.
+*  RECEPTIONIST: Tracks receptionists in the emergency room, linked to worker IDs.
 
-*  BED: Contains information about beds in the hospital, including the nurse and patient assigned to each bed.
+*  NURSE: Stores information about nurses, linked to worker IDs.
 
-*  MEDICATION: Stores details about medications prescribed to patients, including dosage and administration frequency. It also tracks the doctor and nurse responsible for the medication.
+*  DOCTOR: Contains data about doctors, linked to worker IDs.
 
-*  PERSON: General information about persons associated with the hospital, including patients, receptionists, doctors, and nurses.
+*  SHIFT: Represents shifts in the emergency room, with a unique shift ID and start and end times.
+
+*  Shift_Assignment: Associates workers with shifts, indicating whether they are triage doctors.
+
+*  PATIENT: Stores data about patients, linked to person IDs.
+
+*  ADMISSION: Tracks admissions of patients, linking patient IDs, receptionist IDs, and shift IDs.
+
+*  BED: Contains information about beds, including bed IDs and the nurse responsible for each bed.
+
+*  MEDICATION: Stores medications available in the emergency room, with unique medication IDs and names.
+
+*  PRESCRIPTION: Tracks prescriptions issued to patients, including patient IDs, medication IDs, dosage, and frequency per day.
+
+*  Medication_Administration: Records the administration of medications, linking prescription IDs and nurse IDs.
 
 Our scripts includes foreign key constraints to maintain data integrity and ensure referential integrity between related tables.
 
