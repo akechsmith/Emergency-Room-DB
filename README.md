@@ -34,7 +34,7 @@ Our database schema for a hospital management system includes tables for shifts,
 
 Our scripts includes foreign key constraints to maintain data integrity and ensure referential integrity between related tables.
 
-Overall, this schema provides a foundation for managing hospital operations, including patient care, staff scheduling, and medication management.
+Overall, this schema provides a foundation for managing hospital operations, including patient care, staff scheduling, and medication management at the Emergency Room.
 
 ### CONTRIBUTORS
 [Akech Atem](https://github.com/akechsmith)
