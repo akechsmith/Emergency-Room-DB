@@ -37,4 +37,4 @@ Our scripts includes foreign key constraints to maintain data integrity and ensu
 Overall, this schema provides a foundation for managing hospital operations, including patient care, staff scheduling, and medication management at the Emergency Room.
 
 ### CONTRIBUTORS
-[Akech Atem](https://github.com/akechsmith)
+[Akech Atem](https://github.com/akechsmith), [Derrick] (https://github.com/gacheruh)
