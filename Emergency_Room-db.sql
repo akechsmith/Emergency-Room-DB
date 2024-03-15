@@ -127,8 +127,6 @@ VALUES
     (14, 'Wambui', 'Lucy', 'Muthoni'),
     (15, 'Kipchoge', 'Eliud', 'Komen');
 
-SELECT * FROM PERSON;
-
 INSERT INTO Address (address_id, person_id, country, province, city, street, street_number)
 VALUES
     (1, 1, 'Kenya', 'Nairobi', 'Nairobi', 'Moi Avenue', '123'),
@@ -146,8 +144,6 @@ VALUES
     (13, 13, 'Kenya', 'Nairobi', 'Nairobi', 'Kenyatta Avenue', '2829'),
     (14, 14, 'Kenya', 'Nairobi', 'Nairobi', 'Tom Mboya Street', '3031'),
     (15, 15, 'Kenya', 'Nairobi', 'Nairobi', 'Moi Avenue', '3233');
-
-SELECT * FROM ADDRESS;
 
 INSERT INTO CONTACT (contact_id, person_id, email_address, telephone_number)
 VALUES
@@ -167,8 +163,6 @@ VALUES
     (14, 14, 'lucy.wambui@outlook.com', '+254767567890'),
     (15, 15, 'eliud.kipchoge@gmail.com', '+254787678901');
 
-SELECT * FROM CONTACT;
-
 INSERT INTO WORKER (worker_id, worker_type, person_id)
 VALUES
     (1, 'Receptionist', 1),
@@ -180,14 +174,11 @@ VALUES
     (7, 'Nurse', 7),
     (8, 'Doctor', 8);
 
-SELECT * FROM WORKER;
-
 INSERT INTO RECEPTIONIST (receptionist_id, worker_id)
 VALUES
     (1, 1),
     (2, 6);
 
-SELECT * FROM RECEPTIONIST;
 
 INSERT INTO NURSE (nurse_id, worker_id)
 VALUES
@@ -195,7 +186,6 @@ VALUES
     (2, 4),
     (3, 7);
 
-SELECT * FROM NURSE;
 
 INSERT INTO DOCTOR (doctor_id, worker_id)
 VALUES
@@ -203,7 +193,6 @@ VALUES
     (2, 5),
     (3, 8);
 
-SELECT * FROM DOCTOR;
     
 INSERT INTO PATIENT (patient_id, person_id)
 VALUES
@@ -215,7 +204,6 @@ VALUES
     (6, 14),
     (7, 15);
 
-SELECT * FROM PATIENT;
 
 INSERT INTO SHIFT (shift_id, start_time, end_time)
 VALUES
@@ -233,8 +221,6 @@ VALUES
     (6, 3, 6, 0),
     (7, 3, 7, 0),
     (8, 3, 8, 0);
-
-SELECT * FROM SHIFT_ASSIGNMENT;
 
 INSERT INTO ADMISSION (admission_id, patient_id, receptionist_id, shift_id)
 VALUES
@@ -267,8 +253,6 @@ VALUES
     (6, 6, 3),
     (7, 7, 1);
 
-SELECT * FROM Medication_Administration;
-
 INSERT INTO PRESCRIPTION (prescription_id, patient_id, medication_id, dosage, frequency_per_day)
 VALUES
     (1, 1, 3, '500mg', 3),
@@ -279,6 +263,4 @@ VALUES
     (6, 6, 1, '200mg', 1),
     (7, 7, 2, '500mg', 2),
     (8, 7, 4, '20mg', 1);
-
-SELECT * FROM PRESCRIPTION;
 
